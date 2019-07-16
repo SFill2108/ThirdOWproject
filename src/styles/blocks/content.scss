@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .content{
-    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
 }
 .topSection{
     display: flex;
@@ -41,13 +41,16 @@
     background-color: black;
     color: white;
 }
+.sectionDescription{
+    margin: 20px;
+}
 .sectionDescription__name{
     font-size: 35px;
     font-weight: bold;
 }
 .sectionDescription__narrative{
     font-size: 14px;
-    color: grey;
+    color: lightgrey;
 }
 .popularOffer{
     margin: auto;
