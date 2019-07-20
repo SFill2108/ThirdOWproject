@@ -1,11 +1,14 @@
 footer .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:  200px 300px 150px 270px 200px ;
+    grid-column-gap: 15px;
     height: 380px;
     background-color: black;
-    display: flex;
-    justify-content: space-around;
     
 }
 .direction{
+    grid-column-start: 2;
     color: white;
     margin-top: 50px;
     display: flex;
@@ -38,11 +41,38 @@ footer .container {
 
     }
 }
+.documents__rules{
+    :hover{
+        color: white;
+    }
+}
 .rulesLink{
     color: grey;
 }
+#popup{
+    background-color: #fff;
+    width: 800px;
+    height: 900px;
+    margin: auto;
+    position: relative;
+
+}
+.rulesText{
+    padding-left:30px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+p{
+    font-size: 20px;
+}
+.headLine{
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 .form{
+    grid-column-start: 4;
     width: 250px;
     margin-top: 50px;
     display: flex;
@@ -66,4 +96,29 @@ footer .container {
         background-color: #1f00fe;
         border: 0px;
     }
+    }
+    .btn{
+        :hover{
+            background-color: #1703b6;
+        }
+    }
+    ::-webkit-input-placeholder { font-size: 12px; }
+    ::-moz-placeholder          { font-size: 12px; } /* Firefox 19+ */
+    :-moz-placeholder           { font-size: 12px; } /* Firefox 18- */
+    :-ms-input-placeholder      { font-size: 12px; }
+
+.condition{
+    display: none;
+    color:green
 }
+.invalidEmail{
+    color: red;
+    margin-top: 50px;
+    display: none;
+}
+.error{
+    background-color: rgb(228, 121, 121);
+    border: 0px;
+    color: rgb(148, 7, 7);
+}
+

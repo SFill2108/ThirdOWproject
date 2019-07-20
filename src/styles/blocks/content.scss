@@ -28,10 +28,18 @@
 }
 .contacts .phone{
     margin-top: 5px;
+    :hover{
+        color: black;
+    }
 }
 .contacts a{
     text-decoration: none;
     color: gray;
+}
+.email{
+    :hover{
+        color: black;
+    }
 }
 .mainOffer{
     display: inline-block;
