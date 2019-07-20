@@ -3,10 +3,13 @@
     margin-top: 40px;
 }
 .topSection{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 630px 200px;
+    grid-template-rows: 1fr;
 }
 .info{
-    width: 20%;
+    display: inline-block;
+    width: 300px;
 }
 .name1, .name2 {
     font-size: 35px;
@@ -31,13 +34,72 @@
     color: gray;
 }
 .mainOffer{
-    width: 800px;
-    height: 400px;
-    background-image: url(../../assets/img/1.jpg) ;
-    background-size: 100%;
+    display: inline-block;
+    width: 600px;
 }
+.mainOfferNav{
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 100px 100px 100px  ;
+    width: 200px;
+    height: 300px;
+}
+.sl1{
+    max-height: 400px;
+    max-width: 600px;
+    .sl__text{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        background-color:rgba(0,0,0,0.7);
+        color: white;
+        font-size: 14px;
+        margin-bottom: 4px;
+        .sl__name{
+            margin: 10px;
+            .sl__autor{
+                font-size: 12px;
+                color: lightgray;
+                margin-top: 5px;
+            }
+        }
+        .sl__param{
+            font-size: 12px;
+            color: lightgray;
+            margin: 11px;
+
+            .sl__prise{
+                font-size: 14px;
+                color: yellow;
+                margin-top: 6px;
+            }
+        }
+    }
+}
+.sl2{
+    max-height: 100px;
+    max-width: 300px;
+    :hover{
+        -webkit-filter: opacity(50%);
+        filter: opacity(80%);
+    }
+    
+}
+.sl1 img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+.sl2 img{
+    max-width: 100%;
+    height:auto;
+}
+
 .bottomSection{
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr  ;
+    margin-top: 50px;
     background-color: black;
     color: white;
 }
@@ -53,10 +115,12 @@
     color: lightgrey;
 }
 .popularOffer{
+    display: inline;
     margin: auto;
     margin-top: 20px;
-    width: 1200px;
     height: 300px;
-    background-image: url(../../assets/img/1.jpg) ;
-    background-size: 100%;
+    width: 1000px;
+}
+.sl3{
+
 }

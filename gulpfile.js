@@ -9,7 +9,8 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var typograf = require('gulp-typograf');
-
+var cssimport = require("gulp-cssimport");
+var include = require('gulp-include')
 // Девсервер
 function devServer(cb) {
   var params = {
@@ -61,11 +62,13 @@ function buildPages() {
         autoprefixer(),
         cssnano()
       ]))
+      .pipe(cssimport())
       .pipe(dest('www/styles/'));
   }
 
 function buildScripts() {
   return src('src/scripts/**/*.js')
+  .pipe(include())
     .pipe(dest('www/scripts/'));
 }
 

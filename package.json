@@ -15,15 +15,19 @@
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssimport": "^7.0.0",
     "gulp-imagemin": "^6.0.0",
+    "gulp-include": "^2.4.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-twig": "^1.2.0",
     "imagemin-pngquant": "^8.0.0",
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "gulp-typograf": "^4.0.0",
-    "node-normalize-scss": "^8.0.0"
+    "node-normalize-scss": "^8.0.0",
+    "webpack-stream": "^5.2.1"
   }
 }
