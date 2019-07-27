@@ -25,8 +25,8 @@
 //     observer.observe(img);
 // })
 $(function() {
-    function test() {
+    // function test() {
         $('.lazy').Lazy();
-    }
-    setTimeout(test, 1000);
+    // }
+    // setTimeout(test, 3000);
 });

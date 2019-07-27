@@ -11,7 +11,7 @@ var cssnano = require('cssnano');
 var typograf = require('gulp-typograf');
 var cssimport = require("gulp-cssimport");
 var include = require('gulp-include')
-// var validate = require("validate.js");
+var minify = require('gulp-minify');
 // Девсервер
 function devServer(cb) {
   var params = {
@@ -69,8 +69,8 @@ function buildPages() {
 
 function buildScripts() {
   return src('src/scripts/**/*.js')
-  .pipe(include())
-    // .pipe(validate)
+    .pipe(include())
+    .pipe(minify())
     .pipe(dest('www/scripts/'));
 }
 
